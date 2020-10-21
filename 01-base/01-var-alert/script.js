@@ -16,9 +16,8 @@
 
 })();
 
-(function slt() {
-    let slt = "Salut tout le monde!!!";
+let slt = "Salut tout le monde!!!";
+(function() {
     alert(slt);
     // your code here
-
 })();
