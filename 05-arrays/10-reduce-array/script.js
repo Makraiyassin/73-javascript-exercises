@@ -90,5 +90,14 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(element => {
+            let tot = 0;
+            function getSum() {
+                tot = tot + element.age
+                return tot
+            }
+            console.log(people.reduce(getSum));
+        });
+    })
 })();
