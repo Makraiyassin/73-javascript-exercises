@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        let color = Math.floor(Math.random()*1000);
+        document.body.style.backgroundColor = "#"+color;
+    });
 })();

@@ -26,11 +26,13 @@
 
         // your code here
         
-            let arr=[];
-        for(let i=1; i<= 4; i++){ // FONCTIONNE MAIS PAS SUR QUE CE SOI LA MEILLEURE MANIERE DE FAIRE
-            let square = i * i;
+        let arr=[];
+        let square = 1;
+            
+        for(let i=2; square<= 21; i++){ 
             arr.push(square)
+            square = i * i;
         }
-            alert(arr)
+        alert(arr)
     });
 })();
