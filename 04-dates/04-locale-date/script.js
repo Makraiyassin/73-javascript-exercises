@@ -15,4 +15,18 @@
 
     // your code here
 
+    let date = new Date();
+
+    document.getElementById("target").innerHTML = date.toLocaleString();
+
+    // sinon créer une fonction qui va convertir "day" en lettre et "month" en lettre et utiliser ceci:
+
+    // let day = date.getDay();
+    // let date_month = date.getDate();
+    // let month = date.getMonth();
+    // let year = date.getFullYear();
+    // let hours = date.getHours();
+    // let minute = date.getMinutes();
+
+    //document.getElementById("target").innerHTML = day+", "+date_month+"/"+month+"/"+year+" "+hours+"h"+minute;
 })();
