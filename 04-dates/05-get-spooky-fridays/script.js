@@ -25,8 +25,7 @@
         }
         //     return arr.join("\n");
         // }
-        
-        alert(arr.join("\n"));
+        alert(arr.join("\n")); // .join("\") permet de passer à la ligne après chaque élément du tableau
     });
 })();
 
