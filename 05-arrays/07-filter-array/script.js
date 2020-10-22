@@ -89,6 +89,20 @@
         },
     ];
 
-    // your code here
+    // Lorsque vous cliquez sur le bouton, créez un nouveau tableau à partir du tableau people, 
+    // contenant uniquement les personnes âgées de plus de 18 ans. Affichez le tableau résultant dans la console.
 
+    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let arr = []
+        people.forEach(element => {
+            if(element.age>= 18){
+                arr.push(element)
+            }
+        })
+        // arr.forEach(element => {
+        //     console.log(element);
+        // })
+        console.log(arr);
+    })
 })();

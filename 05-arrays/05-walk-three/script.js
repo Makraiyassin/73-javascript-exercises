@@ -40,5 +40,9 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(function(info, index, array) {                
+            console.log("la personne à l'index "+index+"/"+(array.length-1)+" s'appelle: "+info.firstname+" "+info.lastname);
+        })    
+    })
 })();

@@ -90,5 +90,11 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(element => {
+            if((element.firstname == "Jean") && (element.lastname == "Dupont")){
+            console.log("l'adresse email de Jean Dupont est: "+element.email+"\n"+"Et il se trouve à l'index: "+ people.indexOf(element)+"/"+(people.length-1));
+            }
+        })
+    })
 })();
