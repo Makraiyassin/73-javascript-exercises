@@ -90,14 +90,21 @@
     ];
 
     // your code here
+    //HELP !!!!
+
     document.getElementById("run").addEventListener("click", function(){
-        people.forEach(element => {
-            let tot = 0;
-            function getSum() {
-                tot = tot + element.age
-                return tot
-            }
-            console.log(people.reduce(getSum));
-        });
+            // function tot(){
+            //     let sum = 0
+            //     for(let i=0; i<people.length; i++){
+            //         sum= sum + people[i].age
+            //     }
+            //     return sum;
+            // }
+            // console.log(tot());
+
+            //     people.reduce(reducer(total,element.age), 0)
+            //     function reducer(total, current){
+            //         return total + current
+            //     }    
     })
 })();
