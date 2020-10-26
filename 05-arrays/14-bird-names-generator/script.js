@@ -39,4 +39,14 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+            let rand = Math.floor(Math.random()*birds.length);
+            let bird= birds[rand].name;
+
+            let arr_adjectives = Array.from(adjectives)
+            let rand2 = Math.floor(Math.random()*arr_adjectives.length);
+            let adj = arr_adjectives[rand2]
+
+            document.getElementById("target").innerHTML = (birds[rand].fem ? "la " : "le ")+bird+" est "+adj + (birds[rand].fem ? "e." : ".")      
+    })
 })();

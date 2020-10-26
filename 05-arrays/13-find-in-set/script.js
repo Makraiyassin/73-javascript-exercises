@@ -23,4 +23,9 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+    
+    console.log("il y a "+people.size+ " personnes dans ce tableau");
+    console.log("Alexandre est présent de ce tableau? "+people.has("Alexandre")); 
+    })
 })();

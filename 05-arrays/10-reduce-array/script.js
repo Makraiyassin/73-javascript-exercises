@@ -93,6 +93,7 @@
     //HELP !!!!
 
     document.getElementById("run").addEventListener("click", function(){
+            
             // function tot(){
             //     let sum = 0
             //     for(let i=0; i<people.length; i++){
@@ -102,9 +103,10 @@
             // }
             // console.log(tot());
 
-            //     people.reduce(reducer(total,element.age), 0)
-            //     function reducer(total, current){
-            //         return total + current
-            //     }    
+            let total = people.reduce(reducer, 0)
+            function reducer(total, current){
+                return total + current.age
+            }
+            console.log(total);
     })
 })();
