@@ -13,4 +13,14 @@
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        console.log( Object.entries(keys));
+        console.log(Object.entries(values));
+
+        let arr = keys.map((_, i) => [keys[i],values[i]]);
+
+        console.log(Object.fromEntries(arr));
+
+    })
 })();

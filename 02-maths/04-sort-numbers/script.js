@@ -18,7 +18,7 @@
         // your code here
         let valeurs = document.getElementById("numbers").value
         let arr=valeurs.split(", ");
-        arr.sort(function(a,b){return a-b}); // PAS TOUT COMPRIS!
+        arr.sort(function(a,b){return a-b}); // ou: ((a,b) => a-b)
             alert(arr)
     });
 
