@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    let target = document.getElementById("target");
+    let table = document.createElement("table");
+    
+    target.appendChild(table);
+
+    for (let i = 0; i < 10; i++) {
+        document.querySelector("table").appendChild(document.createElement("tr"))       
+        for (let j = 0; j < 10; j++) {
+                document.querySelector("table").children[i].appendChild(document.createElement("td"))
+                document.querySelector("table").children[i].children[j].innerHTML = (i+1)*(j+1)
+        }
+    }
+    
+    table.style.backgroundColor= "#dec7c7";
+
 
 })();
