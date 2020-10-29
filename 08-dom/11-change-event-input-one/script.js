@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    document.getElementById("pass-one").addEventListener("input", function(){
+        
+        document.getElementById("pass-one").setAttribute("maxlength", 10);
 
+        let one = document.getElementById("pass-one").value
+
+        if (one.length <=10){
+            document.getElementById("counter").innerHTML = one.length+"/"+10;
+        }
+    })
 })();

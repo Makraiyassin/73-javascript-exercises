@@ -12,6 +12,12 @@
 (function() {
 
     // your code here
-    
-
+    document.getElementById("run").addEventListener("click", function() {
+        let one= document.getElementById("pass-one").value;
+        let two= document.getElementById("pass-two").value;
+        if(one !== two){
+            document.getElementById("pass-one").style.border= "1px solid red";
+            document.getElementById("pass-two").style.border= "1px solid red";
+        }
+    })
 })();

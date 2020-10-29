@@ -12,5 +12,23 @@
 (function() {
 
     // your code here
+    document.getElementById("pass-one").addEventListener("input", function(){
+        
+        let one = document.getElementById("pass-one").value;
 
+        // let regex = /\d/g;
+        // let array = []
+        // array.push(one.replace(/[^0-9]/g,""))
+        // console.log(array);
+        let stringNumber = one.replace(/[^0-9]/g,"")
+        console.log(string);
+
+        if (one.length >=8 && stringNumber.length>=2){
+            document.querySelector(".indicator").innerHTML = "it's ok";
+            document.querySelector(".indicator").style.color= "green";
+        } else{
+            document.querySelector(".indicator").innerHTML = "not ok!";
+            document.querySelector(".indicator").style.color= "red";
+        }
+    })
 })();

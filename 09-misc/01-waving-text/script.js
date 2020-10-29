@@ -12,5 +12,11 @@
 (function() {
 
     // your code here
-
+    let txt = document.getElementById("target").innerHTML;
+    console.log(txt);
+    let arr = [];
+    for (let i = 0; i < txt.length; i++) {
+        arr.push(txt.charAt(i));
+    }
+    console.log(arr);
 })();
