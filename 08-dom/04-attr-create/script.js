@@ -10,7 +10,17 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    
     // your code here
+    let imgLink = document.getElementById("source").getAttribute("data-image");
+    
+    let img = document.createElement("img");
+    img.setAttribute("src", imgLink);
 
+    document.getElementById("target").appendChild(img);
+    document.getElementById("source").remove();
+    
+    console.log(document.getElementById("source"));
 })();
+
+

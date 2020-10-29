@@ -28,7 +28,7 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function() {
-        let length = fruits.length
+        let length = fruits.length-1
         for(let i = 0 ; i < length ; i ++){
             // console.log(fruits[i]);
             alert(fruits[i]);

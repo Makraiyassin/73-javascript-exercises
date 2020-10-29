@@ -11,9 +11,24 @@
 
 (() => {
     class Animal {
-        sayHello() {
-            return `${this.constructor.greeting}! I'm ${this.name}!`;
+        
+        //ajout
+        constructor(name){
+            this.name=name;
+            this.greeting= "Hello ";
+        }
+        //fin de l'ajout
+
+        sayHello(){
+            // return `${this.constructor.greeting}! I'm ${this.name}!`; //original
+            return `${this.greeting}! I'm ${this.name}!`; //modifié
         }
     }
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let cat = new Animal("tom");
+        let dog = new Animal("snoopy");
+        console.log(cat.sayHello());
+        console.log(dog.sayHello());
+    })
 })();

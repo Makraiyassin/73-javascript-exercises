@@ -13,4 +13,29 @@
 
     // your code here
 
+        // METHODE "GETELEMENTSBYCLASSNAME" 1: fonctionne !
+
+    // let array = document.getElementsByClassName("target")
+    // for (let i = 0; i < array.length; i++) {
+    //     array[i].innerHTML = "owned";
+    // }
+
+        // METHODE "GETELEMENTSBYCLASSNAME" 2:    Ne fonctionne pas ! pk?
+
+    // document.getElementsByClassName("target").forEach(element => {
+    //     element.innerHTML = "owned"
+    // });
+
+        // METHODE "QUERYSELECTORALL" 1: fonctionne !
+
+    // let array = document.querySelectorAll(".target")
+    // for (let i = 0; i < array.length; i++) {
+    //     array[i].innerHTML = "owned";
+    // }
+
+        // METHODE  "QUERYSELECTORALL" 2: fonctionne !
+
+    document.querySelectorAll(".target").forEach(element => {
+        element.innerHTML = "owned"
+    });
 })();

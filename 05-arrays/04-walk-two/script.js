@@ -28,7 +28,7 @@
     // your code here
     document.getElementById("run").addEventListener("click", function(){
         fruits.forEach(function(fruit, index, array) {
-            console.log("fruit à l'index "+index+"/"+(array.length-1)+" : "+fruit);
+            console.log("le fruit à l'index "+index+"/"+(array.length-1)+" : "+fruit);
         })
     })
 })();

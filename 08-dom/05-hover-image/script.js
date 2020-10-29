@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    let img = document.getElementsByTagName("img")[0];
+    let img1 = document.getElementsByTagName("img")[0].src;
+    let img2 = document.getElementsByTagName("img")[0].dataset.hover
+    
+    img.addEventListener("mouseover",function (){
+        img.setAttribute("src", img2)
+    })
+    img.addEventListener("mouseout",function (){
+        img.setAttribute("src", img1)
+    })
 
-})();
+
+})()

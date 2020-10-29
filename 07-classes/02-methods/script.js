@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        class Person{
+            constructor(firstname,lastname){
+                this.firstname = firstname;
+                this.lastname = lastname;
+            }
+            sayHello(){
+               return "hello"+this.firstname+this.lastname;
+            }
+        }
+        
+        let yassin = new Person(" Yassin", " Makraï");
+        
+        console.log(yassin.sayHello());
+    })
 })();

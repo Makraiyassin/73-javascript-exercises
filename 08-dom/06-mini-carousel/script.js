@@ -20,5 +20,20 @@
     ];
 
     // your code here
+    let i=1;
+    let length = gallery.length;
+    document.getElementById("next").addEventListener("click",function (){  
+        if(i == length){
+            i=0
+        }
+        document.querySelector("img").setAttribute("src",gallery[i])
+        console.log(i);
+        return i++
+    });
 
+    // document.getElementById("next").addEventListener("click",function (){
+    //     let rand = Math.floor(Math.random()*5);
+    //     document.querySelector("img").setAttribute("src",gallery[rand]);
+    //     console.log(rand);
+    // })    
 })();
