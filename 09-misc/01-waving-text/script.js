@@ -13,10 +13,27 @@
 
     // your code here
     let txt = document.getElementById("target").innerHTML;
-    console.log(txt);
     let arr = [];
+
     for (let i = 0; i < txt.length; i++) {
         arr.push(txt.charAt(i));
     }
-    console.log(arr);
+
+    document.getElementById("target").innerHTML= ""
+
+    let size = ["14px","17px","20px","23px","25px","28px"];
+    let j = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        let span = document.createElement("span");
+        span.classList.add("wave");
+
+        document.getElementById("target").appendChild(span);
+        document.getElementsByClassName("wave")[i].innerHTML = arr[i];
+        
+        document.getElementsByClassName("wave")[i].style.fontSize = size[j];
+        j++
+        if(j == 6){j = 0}
+    }
 })();
+
