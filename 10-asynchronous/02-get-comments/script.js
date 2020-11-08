@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        window.lib.getPosts((erreur, abc) => {
+            console.log(erreur);
+            console.log(abc);
+
+            abc.forEach(element => {
+                window.lib.getComments(element,(erreur, comments) => {
+                    console.log(comments);
+                }) 
+            });   
+        });
+    })     
 })();

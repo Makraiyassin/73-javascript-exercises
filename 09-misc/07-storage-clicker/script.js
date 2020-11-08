@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+    let count = 0
+    document.getElementById("increment").addEventListener("click", function() {
+        count++
 
+        // solution 1 (sans localStorage):
+        // document.getElementById("target").innerHTML = count
+        
+        //solution 2 (avec localStorage):
+        localStorage.setItem("count", count);
+        document.getElementById("target").innerHTML = localStorage.getItem("count");
+    })
 })();
