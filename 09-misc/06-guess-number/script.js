@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+    let x = Math.floor(Math.random()* 100)+1
+    let answer = prompt("I chose a number between 1 and 100. Guess it:");
+    let count = 1
+    while (x != answer) {
+        if (answer < x) {
+            alert("higher")
+            answer = prompt("Try again: ");
+            count++
+        } else if (answer > x){
+            alert("lower")
+            answer = prompt("Try again: ")
+            count++
+        }
+    }
+    alert("that's it!")
 
+    alert("you needed " + count +" guesses!")
 })();
