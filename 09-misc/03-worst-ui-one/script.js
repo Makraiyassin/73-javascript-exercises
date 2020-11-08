@@ -12,5 +12,25 @@
 (function() {
 
     // your code here
- //abc
+    document.getElementById("slider").addEventListener("click", function(){
+        
+    let slider = document.getElementById("slider").value;
+    document.getElementById("target").innerHTML = slider;
+    // console.log(slider);
+
+    })
 })();
+
+//___________________________________________________________________________________
+    // let txt = document.getElementById("target").innerHTML;
+    // console.log(txt.charAt(2)); // 6
+
+    // let slider = document.getElementById("slider").value
+    // slider = 490123456
+    // console.log(slider)
+
+    // txt = slider
+    // console.log(txt);
+
+    // document.getElementById("slider").value = 490123456
+    // document.getElementById("target").innerHTML = document.getElementById("slider").value;
