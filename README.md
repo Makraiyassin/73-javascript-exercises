@@ -2,11 +2,6 @@
 
 Welcome to the JavaScript folder.
 
-- some links :
-    - https://makraiyassin.github.io/73-javascript-exercises/01-base/04-asv-confirm
-    - https://makraiyassin.github.io/73-javascript-exercises/02-maths/02-calculator-two
-    - https://makraiyassin.github.io/73-javascript-exercises/02-maths/04-sort-numbers
-    - https://makraiyassin.github.io/73-javascript-exercises/03-colors/02-change-bcg-two
 - Repository name: `73-javascript-exercises`
 - Mode: `solo`
 - Type of Challenge: `learning`
